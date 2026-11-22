@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Live push-to-talk dictation",
+    "description": "Hold Alt and speak: the transcript appears in the composer as you talk, keeps refining the whole utterance, and settles when you release the key.",
+    "detail": "docs/DETAIL.md"
+  }
+}

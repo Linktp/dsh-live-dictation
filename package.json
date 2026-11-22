@@ -1,0 +1,64 @@
+{
+  "name": "dsh-live-dictation",
+  "version": "0.1.0",
+  "description": "按住 Alt 说话：文字边说边出现在 DeepSeek Harness 的输入框里，并整段持续自我修正，松手即定稿。",
+  "type": "module",
+  "license": "MIT",
+  "author": "Linktp <46404681+Linktp@users.noreply.github.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Linktp/dsh-live-dictation.git"
+  },
+  "homepage": "https://github.com/Linktp/dsh-live-dictation#readme",
+  "bugs": {
+    "url": "https://github.com/Linktp/dsh-live-dictation/issues"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "voice",
+    "voice-input",
+    "dictation",
+    "speech-to-text",
+    "asr",
+    "push-to-talk",
+    "hold-to-talk",
+    "sensevoice"
+  ],
+  "engines": {
+    "dsh": ">=0.2.0"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}

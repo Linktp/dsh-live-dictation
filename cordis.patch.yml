@@ -1,0 +1,4 @@
+- insert:
+    - id: live-dictation
+      name: dsh-live-dictation
+      config: {}

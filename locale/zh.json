@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "按住 Alt 语音输入",
+    "description": "按住 Alt 说话：文字边说边出现在输入框里，整段持续自我修正，松开即定稿。",
+    "detail": "docs/DETAIL.md"
+  }
+}
